@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-13T22:04:45.368Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="-MGsLQ9PAqAMYpsfnbhd" version="24.0.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-04-13T22:05:27.128Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="TGRVVihFJXfgOSrRSujr" version="24.0.4" type="github" pages="2">
   <diagram name="FindAvailableRoom" id="GECmr9wY6oCdK8dZKXtr">
     <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -268,129 +268,10 @@
     </mxGraphModel>
   </diagram>
   <diagram id="9ViAL8n-cF3U2N7R95r8" name="GetFullyOccupiedDates">
-    <mxGraphModel dx="1434" dy="1907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-2" value="&lt;div&gt;&amp;nbsp;public int FindAvailableRoom(DateTime startDate, DateTime endDate)&lt;/div&gt;&lt;div&gt;&amp;nbsp;{&lt;/div&gt;&lt;div&gt;1.&amp;nbsp; &amp;nbsp; &amp;nbsp;if (startDate &amp;lt;= DateTime.Today || startDate &amp;gt; endDate)&lt;/div&gt;&lt;div&gt;2.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; throw new ArgumentException(&quot;The start date cannot be in the past or later than the end date.&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.&amp;nbsp; &amp;nbsp; var activeBookings = bookingRepository.GetAll().Where(b =&amp;gt; b.IsActive);&lt;/div&gt;&lt;div&gt;4.&amp;nbsp; &amp;nbsp; foreach (var room in roomRepository.GetAll())&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&lt;/div&gt;&lt;div&gt;5.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;var activeBookingsForCurrentRoom = activeBookings.Where(b =&amp;gt; b.RoomId == room.Id);&lt;/div&gt;&lt;div&gt;6.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;if (activeBookingsForCurrentRoom.All(b =&amp;gt; &lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;endDate &amp;lt; b.StartDate || startDate &amp;gt; b.EndDate &amp;amp;&amp;amp; endDate &amp;gt; b.EndDate))&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&lt;/div&gt;&lt;div&gt;7.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;return room.Id;&lt;/div&gt;&lt;div&gt;8.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;9.&amp;nbsp; &amp;nbsp;return -1;&lt;/div&gt;&lt;div&gt;&amp;nbsp;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="200" y="-60" width="570" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-6" value="1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="340" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-7" value="Source node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="190" y="320" width="90" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-8" value="2" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="340" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-9" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-6" target="_FpC0XtVZpHmiKjNLCnq-8">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="90" y="440" as="sourcePoint" />
-            <mxPoint x="190" y="440" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-10" value="3" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="420" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-11" value="4" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="500" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-14" value="5" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="580" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-16" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-6" target="_FpC0XtVZpHmiKjNLCnq-10">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="290" y="480" as="sourcePoint" />
-            <mxPoint x="390" y="480" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-17" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-10" target="_FpC0XtVZpHmiKjNLCnq-11">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="250" y="480" as="sourcePoint" />
-            <mxPoint x="350" y="480" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-18" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-11" target="_FpC0XtVZpHmiKjNLCnq-14">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="280" y="560" as="sourcePoint" />
-            <mxPoint x="380" y="560" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-19" value="6" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="660" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-21" value="7" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="740" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-23" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-14" target="_FpC0XtVZpHmiKjNLCnq-19">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="310" y="640" as="sourcePoint" />
-            <mxPoint x="410" y="640" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-24" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.68;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-19" target="_FpC0XtVZpHmiKjNLCnq-21">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="360" y="660" as="sourcePoint" />
-            <mxPoint x="460" y="660" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-25" value="8" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="740" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-26" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.32;entryY=0.08;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-19" target="_FpC0XtVZpHmiKjNLCnq-25">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="220" y="700" as="sourcePoint" />
-            <mxPoint x="320" y="700" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-28" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-25" target="_FpC0XtVZpHmiKjNLCnq-11">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="540" as="sourcePoint" />
-            <mxPoint x="360" y="490" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="300" y="610" />
-              <mxPoint x="300" y="580" />
-              <mxPoint x="270" y="540" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-29" value="9" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="810" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-30" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.7;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-21" target="_FpC0XtVZpHmiKjNLCnq-29">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="340" y="970" as="sourcePoint" />
-            <mxPoint x="440" y="970" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-31" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.26;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_FpC0XtVZpHmiKjNLCnq-25" target="_FpC0XtVZpHmiKjNLCnq-29">
-          <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="310" y="850" as="sourcePoint" />
-            <mxPoint x="410" y="850" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-32" value="Sink node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="190" y="848" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-33" value="Control Flow Graph / Program Graph" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="40" y="290" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-34" value="&lt;div&gt;public int FindAvailableRoom(DateTime startDate, DateTime endDate)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (startDate &amp;lt;= DateTime.Today || startDate &amp;gt; endDate)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; throw new ArgumentException(&quot;The start date cannot be in the past or later than the end date.&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; var activeBookings = bookingRepository.GetAll().Where(b =&amp;gt; b.IsActive);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; foreach (var room in roomRepository.GetAll())&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; var activeBookingsForCurrentRoom = activeBookings.Where(b =&amp;gt; b.RoomId == room.Id);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (activeBookingsForCurrentRoom.All(b =&amp;gt; startDate &amp;lt; b.StartDate &amp;amp;&amp;amp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; endDate &amp;lt; b.StartDate || startDate &amp;gt; b.EndDate &amp;amp;&amp;amp; endDate &amp;gt; b.EndDate))&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return room.Id;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return -1;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="500" y="295" width="560" height="290" as="geometry" />
-        </mxCell>
-        <mxCell id="_FpC0XtVZpHmiKjNLCnq-35" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.&lt;/div&gt;&lt;div&gt;3.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.&lt;/div&gt;&lt;div&gt;5.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;7.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;8.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;9.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;10.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;11.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="465" y="329" width="40" height="240" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
