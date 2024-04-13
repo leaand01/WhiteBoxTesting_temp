@@ -1,1 +1,1 @@
-Temporary project for storing .draio images for the HotelBooking project.
+Temporary project for storing .drawio images for the HotelBooking project.
