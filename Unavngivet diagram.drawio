@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-13T22:19:07.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="oxHYBi5eW6kakTH53e9x" version="24.0.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-04-14T19:01:21.960Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="k-YALWICldRHMQec3u6R" version="24.0.4" type="github" pages="2">
   <diagram name="FindAvailableRoom" id="GECmr9wY6oCdK8dZKXtr">
     <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -360,7 +360,7 @@
             <mxPoint x="1044" y="460" as="sourcePoint" />
             <mxPoint x="1144" y="460" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1104" y="690" />
+              <mxPoint x="1104" y="630" />
             </Array>
           </mxGeometry>
         </mxCell>
