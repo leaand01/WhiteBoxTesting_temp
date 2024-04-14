@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-14T20:05:50.920Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Ze9qwtdvfdQTdxWBr--W" version="24.2.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-04-14T20:07:02.016Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="YD__UyKY9kXNprbX1glp" version="24.2.5" type="github" pages="3">
   <diagram name="FindAvailableRoom" id="GECmr9wY6oCdK8dZKXtr">
-    <mxGraphModel dx="1434" dy="1907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -383,10 +383,10 @@
           <mxGeometry x="1147" y="300" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-2" value="Node coverage (lowest level of coverage)&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Every node in the DD-path graph is traversed&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Minimum requirement for unit testing&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Node coverage = nodes traversed / total #nodes&lt;/span&gt;&lt;/div&gt;" style="shape=table;startSize=60;container=1;collapsible=0;childLayout=tableLayout;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;swimlaneFillColor=#FFFFFF;fontColor=#000000;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="74" width="360" height="196" as="geometry" />
+          <mxGeometry x="680" y="74" width="380" height="196" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-3" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=inherit;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#000000;" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-2">
-          <mxGeometry y="60" width="360" height="30" as="geometry" />
+          <mxGeometry y="60" width="380" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-4" value="Nr" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-3">
           <mxGeometry width="40" height="30" as="geometry">
@@ -394,12 +394,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-5" value="Test case" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-3">
-          <mxGeometry x="40" width="320" height="30" as="geometry">
-            <mxRectangle width="320" height="30" as="alternateBounds" />
+          <mxGeometry x="40" width="340" height="30" as="geometry">
+            <mxRectangle width="340" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#000000;" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-2">
-          <mxGeometry y="90" width="360" height="30" as="geometry" />
+          <mxGeometry y="90" width="380" height="30" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-7" value="1" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-6">
           <mxGeometry width="40" height="30" as="geometry">
@@ -407,12 +407,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-8" value="startDate = endDate = Today&amp;nbsp;" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-6">
-          <mxGeometry x="40" width="320" height="30" as="geometry">
-            <mxRectangle width="320" height="30" as="alternateBounds" />
+          <mxGeometry x="40" width="340" height="30" as="geometry">
+            <mxRectangle width="340" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-10" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#000000;" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-2">
-          <mxGeometry y="120" width="360" height="26" as="geometry" />
+          <mxGeometry y="120" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-11" value="2" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-10">
           <mxGeometry width="40" height="26" as="geometry">
@@ -420,12 +420,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-12" value="startDate = endDate =&amp;nbsp; Today + 1" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-10">
-          <mxGeometry x="40" width="320" height="26" as="geometry">
-            <mxRectangle width="320" height="26" as="alternateBounds" />
+          <mxGeometry x="40" width="340" height="26" as="geometry">
+            <mxRectangle width="340" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#000000;" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-2">
-          <mxGeometry y="146" width="360" height="26" as="geometry" />
+          <mxGeometry y="146" width="380" height="26" as="geometry" />
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-18" value="3" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-17">
           <mxGeometry width="40" height="26" as="geometry">
@@ -433,28 +433,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-19" value="startDate = endDate =&amp;nbsp; Today + 2" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-17">
-          <mxGeometry x="40" width="320" height="26" as="geometry">
-            <mxRectangle width="320" height="26" as="alternateBounds" />
+          <mxGeometry x="40" width="340" height="26" as="geometry">
+            <mxRectangle width="340" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8yLsO5vO9ow1sGpMOGjO-1" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#000000;" vertex="1" parent="bg0yVp8UXrcKYgIzdM6Z-2">
-          <mxGeometry y="172" width="360" height="24" as="geometry" />
+          <mxGeometry y="172" width="380" height="24" as="geometry" />
         </mxCell>
         <mxCell id="8yLsO5vO9ow1sGpMOGjO-2" value="4" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="8yLsO5vO9ow1sGpMOGjO-1">
           <mxGeometry width="40" height="24" as="geometry">
             <mxRectangle width="40" height="24" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8yLsO5vO9ow1sGpMOGjO-3" value="startDate = endDate&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;amp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;No active bookings&lt;/span&gt;" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="8yLsO5vO9ow1sGpMOGjO-1">
-          <mxGeometry x="40" width="320" height="24" as="geometry">
-            <mxRectangle width="320" height="24" as="alternateBounds" />
+        <mxCell id="8yLsO5vO9ow1sGpMOGjO-3" value="startDate = endDate = Today + 1 and&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;No active bookings&lt;/span&gt;" style="html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;fontColor=#000000;fontStyle=1" vertex="1" parent="8yLsO5vO9ow1sGpMOGjO-1">
+          <mxGeometry x="40" width="340" height="24" as="geometry">
+            <mxRectangle width="340" height="24" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bg0yVp8UXrcKYgIzdM6Z-9" value="Notes:&lt;div&gt;Multiple conditino ocverage: Example: (a&amp;gt;b) &amp;amp;&amp;amp; (b&amp;lt;c)&lt;div&gt;MCDC: alternative method for handling multiple condition coverage&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="410" y="993" width="380" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bg0yVp8UXrcKYgIzdM6Z-16" value="Setup: Assume we have a mock room and booking repository with&lt;div&gt;&lt;ul&gt;&lt;li&gt;1 room&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 active reservation on date Today + 2&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="700" y="-30" width="370" height="80" as="geometry" />
+        <mxCell id="bg0yVp8UXrcKYgIzdM6Z-16" value="&lt;b&gt;Node Coverage Setup&lt;/b&gt;: Assume we have a mock room and booking repository with&lt;div&gt;&lt;ul&gt;&lt;li&gt;1 room&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 active reservation on date Today + 2&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="677" y="10" width="470" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
