@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-16T22:06:47.517Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="_VBkcM_iBZJ-2t49gAxW" version="24.2.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-04-16T22:07:19.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="gicAzmvgYHIoT16WFitK" version="24.2.5" type="github" pages="3">
   <diagram name="FindAvailableRoom" id="GECmr9wY6oCdK8dZKXtr">
     <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -463,7 +463,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="FindAvailableRoom_v2" id="O9XRfseYMxeUqQ86lQii">
-    <mxGraphModel dx="2261" dy="1907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="1907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="hvJsiPCnHU50Am5WqRKu-0" />
         <mxCell id="hvJsiPCnHU50Am5WqRKu-1" parent="hvJsiPCnHU50Am5WqRKu-0" />
@@ -1352,6 +1352,9 @@
         </mxCell>
         <mxCell id="IAJFFc4CXyYlLtaABmTO-28" value="Source node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="hvJsiPCnHU50Am5WqRKu-1">
           <mxGeometry x="-445" y="435" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YRjHrx0gJtcb61MbMBCh-0" value="Program path&lt;div&gt;if i and j are nodes in the program graph, an edge exists from node i to node j if and only if the statement fragment corresponding to node j can be executed immediately after the statement fragment corresponding to node i.&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;" vertex="1" parent="hvJsiPCnHU50Am5WqRKu-1">
+          <mxGeometry x="-884.14" y="-130" width="1200" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
